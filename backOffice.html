@@ -12,6 +12,25 @@
 
   <title>Hello, world!</title>
 </head>
+<nav class="navbar navbar-expand-lg navbar-light bg-info ">
+  <a class="navbar-brand" href="#">Strive School Shop</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item ">
+        <a class="nav-link active" href="./fontOffice.html">Front Office <span class="sr-only">(current)</span></a>
+      </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+
+
 
 <body>
   <div class="container">
@@ -33,6 +52,12 @@
     <div>
       <form>
         <ul class="list-group">
+
+          <span class="text-center font-weight-bold bg-success text-white d-none">The Product was successfully
+            added</span>
+          <span class="text-center font-weight-bold bg-danger text-white d-none">The product was not successfully
+            added</span>
+
           <li class="list-group-item">
             <label for="name">Product Name</label>
             <input type="text" name="name" id="name" required>
@@ -50,7 +75,7 @@
 
           <li class="list-group-item">
             <label for="imageUrl">Product Image</label>
-            <input type="file" name="imageUrl" id="imageUrl" required>
+            <input type="url" name="imageUrl" id="imageUrl" required>
 
           </li>
 
@@ -59,9 +84,9 @@
             <input type="number" name="price" id="price" required>
           </li>
 
-          <button class="mt-5" type="submit"> Submit</button>
+          
+          <button class="mt-2" type="submit"> Submit </button>
       </form>
-
 
     </div>
 
